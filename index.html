@@ -14,21 +14,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   
  <script>
-     function clickCounter(){
-         if (typeof(storage) !== "undefined") {
-             if(localStorage.clickcount) {
-                 localStorage.clickcount = Number(localStorage.clickcount)+1;
-             }
-             else{
-                 localStorage.clickcount = 1;
-             }
-
-             document.getElementById("like").innerHTML ="you have clicked"+  localStorage.clickcount + "time(s).";
-            }
-        else{
-            document.getElementById("like").innerHTML = "Sorry, your browser does not support web storage..."
-        }
-     }
+     function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("like").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } else {
+    document.getElementById("like").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
  </script>
 
 
