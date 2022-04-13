@@ -1,0 +1,151 @@
+
+ 
+ 
+ :root{
+     --bgcolor:var(191f22);
+     --blue:var(01cff0);
+ }
+ 
+ 
+
+#navbar_main{
+    background: rgb(27 47 48 / 50%);
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-brand{
+    color:#00dcff;
+   
+}
+.navbar,li,a{
+    color: white;
+}
+.navbar,li,a:hover{
+    color: #00dcff;
+}
+
+.navbar-brand:hover{
+    background: none;
+}
+
+#navbarNav{
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+
+.navbar-toggler{
+    background: #00dcff;
+    height: 30px;
+    width: 45px;
+    padding-left: 4px;
+    border-left-width: 0px;
+    padding-right: 0px;
+}
+
+.navbar-nav,li{
+    margin-left: 15px;
+}
+
+.li,.a:hover{
+    color: aliceblue;
+}
+ 
+ 
+ 
+ #home{
+    background: url(main.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+#home,.h1{
+    font-weight: 600;
+    letter-spacing: 5px;
+    color: #1f323a;
+}
+
+.explore{
+    background: #1f323a;
+    color: #a3a3d9;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.explore:hover{
+    color: aliceblue;
+}
+
+.search_bar{
+    padding-top: 20px;
+}
+
+.search{
+    color: #3fff3f;
+    background: #1f323a;
+}
+
+@media screen and (max-width:770px){
+    .search_bar{
+        width: fit-content;
+    }
+}
+
+.logo{
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #191f22;
+}
+
+.blog-logo{
+    width: 300px;
+    margin-left: 30px;
+}
+
+.margin_line{
+    border-right:inset #01cff0; 
+}
+
+@media screen and (max-width:770px){
+    .margin_line{
+        border-right: none;
+        padding-bottom: 50px;
+        border-bottom: inset #00dcff;
+    }
+}
+.about{
+    padding: 80px;
+    text-align: center;
+    color: white;
+}
+
+.first_card{
+    margin-top: 100px;
+}
+
+#card{
+    margin: 35px;
+}
+
+
+@media screen and (min-width:770px){
+    #card{
+        margin: 0%;
+    }
+}
+@media screen and (max-width:770px){
+    .card-1{
+        padding-bottom: 20px;
+    }
+}
