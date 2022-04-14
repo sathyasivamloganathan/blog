@@ -73,9 +73,14 @@
       <h1>WELCOME TO BLOG 4</h1>
       <button class="btn btn-default explore" type="button">Explore</button>
       <form action="search" class="form-inline my-2 my-lg-0 search_bar">
-        <input type="search" class="form-control mr-sm-2" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 search" type="submit">Search</button>
-      </form>
+
+        <button class="btn btn-outline-success my-2 my-sm-0 search dropdown-toggle"  type="button" id="dropdownMenuButton" data-toggle="dropdown" >Search the Stream</button>
+        <div class="dropdown-menu" aria-labelledly="dropdownMenuButton">
+            <a href="#a1" class="dropdown-item">Stream 1</a>
+            <a href="#" class="dropdown-item">Stream 2</a>
+            <a href="#" class="dropdown-item">Stream 3</a>
+        </div>
+     </form>
   </section>
 
 
@@ -186,7 +191,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col" id="sm-6">
             <div class="card card-1">
                 <img src="image.jpg" alt="image">
                 <div class="card-body">
@@ -199,6 +204,36 @@
         </div>
     </div>
 </div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col" id="card">
+            <div class="card card-1" style="width: 300px;">
+               <img src="image.jpg" class="card-img-top" alt="image">
+                  <div class="card-body">
+                      <p class="card-text">
+                          <h3>Third Card</h3>
+                          <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                      </p>
+                  </div>
+              </div>
+        </div>  
+
+        <div class="col" id="a1">
+            <p class="fa fa-comments-o subscribe">&nbsp;&nbsp;SUBSCRIBE</p>
+            <button class="sub_platform fa fa-linkedin">Linkedin</button>
+            <button class="fa fa-instagram">Instagram</button>
+            <button class="fa fa-twitter" >Twitter</button>
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 </html>
