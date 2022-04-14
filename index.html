@@ -14,18 +14,27 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   
  <script>
-     function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
-      localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
-      localStorage.clickcount = 1;
-    }
-    document.getElementById("like").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
-  } else {
-    document.getElementById("like").innerHTML = "Sorry, your browser does not support web storage...";
-  }
-}
+     /*function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+            localStorage.clickcount = 1;
+            }
+            document.getElementById("like").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+        } else {
+            document.getElementById("like").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+        }
+
+        var clicks=14;
+        document.getElementById("clicks").innerHTML = clicks;
+
+        $('.like-counter').click(function(){
+            clicks+=1;
+            document.getElementById("clicks").innerHTML = clicks;
+            $('.like-counter').addClass("liked");
+        })*/
  </script>
 
 
@@ -93,12 +102,13 @@
       <div class="row card-row">
           <div class="col" id="card">
               <div class="card card-1" style="width: 300px;">
-                 <img src="image.jpg" class="card-img-top" alt="image">
+                 <img src="image.jpg" class="card-img-top " alt="image">
                     <div class="card-body">
                         <p class="card-text">
-                            <h3>LKlkddfkkldf</h3>
-                            <p class="fa fa-calendar">&nbsp;&nbsp;13-4-2022</p>
-                            <p class="fa fa-thumbs-up" id="like" onclick="clickCounter()"></p>
+                            <h3>First card</h3>
+                            <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                           
+                           
                         </p>
                     </div>
                 </div>
@@ -108,9 +118,9 @@
             <div class="card card-1" style="width: 300px;">
                <img src="image.jpg" class="card-img-top" alt="image">
                   <div class="card-body">
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipis
-                          icing elit. Veniam mt quos, iusto quod pariatur cum magnam dolo
-                          re magni .
+                      <p class="card-text">
+                        <h3>Second Card</h3>
+                        <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
                       </p>
                   </div>
               </div>
@@ -120,9 +130,9 @@
             <div class="card card-1" style="width: 300px;">
                <img src="image.jpg" class="card-img-top" alt="image">
                   <div class="card-body">
-                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipis
-                          icing elit. Veniam mt quos, iusto quod pariatur cum magnam dolo
-                          re magni .
+                      <p class="card-text">
+                          <h3>Third Card</h3>
+                          <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
                       </p>
                   </div>
               </div>
@@ -133,7 +143,62 @@
 </div>
 
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6" id="sm-6">
+            <div class="card card-1">
+                <img src="image.jpg" alt="image">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h3>Fourth Card</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis velit neque, optio est nemo aliquid fugit repellat voluptatem hic voluptas suscipit sapiente laboriosam praesentium nihil quisquam laborum. Possimus, et eos.</p>
+                        <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                    </p>
+                </div>
+            </div>
+        </div>
 
+            <div class="col-sm-3 card-combine" >
+                <div class="card">
+                    <img src="image.jpg" alt="image">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3 class="card-text-size">Fifth Card</h3>
+                            <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 card-combine" >
+                <div class="card">
+                    <img src="image.jpg" alt="image">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <h3 class="card-text-size">sixth Card</h3>
+                            <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card card-1">
+                <img src="image.jpg" alt="image">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h3>Fourth Card</h3>
+                        <p class="fa fa-calendar-o date">&nbsp;&nbsp;13, April</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
