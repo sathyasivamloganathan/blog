@@ -138,14 +138,53 @@
     margin: 35px;
 }
 
+.card-1{
+    border: none;
+}
+
 
 @media screen and (min-width:770px){
     #card{
         margin: 0%;
     }
 }
+
+
+.card-body{
+    background: black;
+    color: white;
+
+}
+
+.card-text,.h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+.date{
+    color: #a7a7a7;
+    font-size: 15px;
+}
+
+
+#sm-6{
+    padding-top: 30px;
+}
+
+.card-combine{
+    padding-top: 30px;
+}
+
 @media screen and (max-width:770px){
-    .card-1{
-        padding-bottom: 20px;
+    .card-combine{
+        width: 50%;
+        padding: 30px;
+    }
+
+    .card-text-size{
+        font-size: 1.3rem;
+    }
+    #sm-6{
+        padding: 30px;
     }
 }
+
+
