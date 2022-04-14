@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
  
  
  :root{
@@ -186,5 +188,18 @@
         padding: 30px;
     }
 }
+
+
+.subscribe{
+    font-size: 1.75rem;
+    color: #00dcff;
+    display: flex;
+    padding: 45px;
+    flex-wrap: wrap;
+    flex-direction: inherit;
+    justify-content: center;
+    
+}
+
 
 
